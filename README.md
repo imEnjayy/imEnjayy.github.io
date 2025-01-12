@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Box</title>
+    <title>Responsive Styled Box</title>
     <style>
         body {
             display: flex;
@@ -16,33 +16,34 @@
         }
 
         .box {
-            width: 200px;
-            height: 180px;
+            min-width: 150px; /* Initial minimum width */
+            min-height: 100px; /* Initial minimum height */
             background-color: #1A2C38;
             border: 3px solid #00FF00; /* Green border always visible */
             border-radius: 10px;
+            padding: 20px; /* Padding for content spacing */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional for better look */
+            transition: transform 0.2s, width 0.2s, height 0.2s;
         }
 
         .box:hover {
             transform: scale(1.05); /* Slight zoom effect on hover */
-            transition: transform 0.2s;
         }
 
         .multiplier {
-            font-size: 24px; /* Updated for Helvetica consistency */
+            font-size: 24px; /* Adjusted font size for consistency */
             font-weight: 700;
             color: #00FF00; /* Green text */
             margin-bottom: 10px;
         }
 
         .divider {
-            width: 60%; /* Updated to proper size */
-            height: 2px; /* Increased thickness */
+            width: 60%; /* Proper size for divider */
+            height: 2px; /* Thickness adjustment */
             background-color: #2F4553; /* Dark gray-blue */
             margin: 10px 0;
         }
