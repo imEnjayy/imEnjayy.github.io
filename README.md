@@ -11,22 +11,22 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #000000; /* Page background: black */
+            background-color: #0F1E28; /* Page background */
             font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
         }
 
         .box {
-            width: 160px; /* Square dimensions */
-            height: 160px; /* Square dimensions */
-            background-color: #1A2C38; /* Inner box background color */
-            border: 5px solid #00FF00; /* Green border */
+            min-width: 150px; /* Initial minimum width */
+            min-height: 100px; /* Initial minimum height */
+            background-color: #1A2C38;
+            border: 5px solid #00FF00; /* Slightly larger green border */
             border-radius: 10px;
+            padding: 20px; /* Padding for content spacing */
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Distribute items evenly */
+            justify-content: center;
             align-items: center;
-            padding: 15px; /* Inner spacing */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional for better look */
             transition: transform 0.2s, width 0.2s, height 0.2s;
         }
 
@@ -35,34 +35,37 @@
         }
 
         .multiplier {
-            font-size: 24px; /* Font size for "1.03×" */
+            font-size: 24px; /* Adjusted font size for consistency */
             font-weight: 700;
             color: #00FF00; /* Green text */
-            margin: 0; /* No extra margin */
+            margin-bottom: 10px;
         }
 
         .divider {
-            width: 60%; /* Adjusted divider width */
-            height: 2px; /* Adjusted divider thickness */
-            background-color: #2F4553; /* Divider color */
-            margin: 0; /* No extra margin */
+            width: 60%; /* Proper size for divider */
+            height: 2px; /* Thickness adjustment */
+            background-color: #2F4553; /* Dark gray-blue */
+            margin: 10px 0;
         }
 
         .value {
             display: flex;
             align-items: center;
-            font-size: 16px; /* Font size for $0.00 */
-            font-weight: 700; /* Bold style for dollar amount */
-            font-variant-numeric: tabular-nums; /* Equal digit spacing */
+            font-size: 16px; /* Updated font size for $0.00 */
+            font-weight: 700; /* Match Helvetica bold weight */
+            font-variant-numeric: tabular-nums; /* For equal spacing between digits */
             color: #00FF00; /* Green text */
             line-height: 120%; /* Proper line height */
-            margin: 0; /* No extra margin */
+        }
+
+        .value span {
+            font-size: 16px;
         }
 
         .value img {
-            width: 18px; /* Litecoin logo size */
+            width: 18px; /* Scaled Litecoin logo */
             height: 18px;
-            margin-left: 5px; /* Space between text and logo */
+            margin-left: 5px;
         }
     </style>
 </head>
