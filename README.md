@@ -43,7 +43,7 @@
 
         .divider {
             width: 60%; /* Proper size for divider */
-            height: 2px; /* Thickness adjustment */
+            height: 3.5px; /* Thickness adjustment */
             background-color: #2F4553; /* Dark gray-blue */
             margin: 10px 0;
         }
