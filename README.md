@@ -40,16 +40,16 @@
         }
 
         .divider {
-            width: 80%;
+            width: 60%; /* Shortened length */
             height: 1px;
-            background-color: #00FF00; /* Green line */
+            background-color: #2F4553; /* Updated to dark gray-blue */
             margin: 10px 0;
         }
 
         .value {
             display: flex;
             align-items: center;
-            font-weight: bold;
+            font-weight: normal; /* Reduced boldness */
             font-size: 16px;
             line-height: 120%;
             color: #00FF00; /* Green text */
