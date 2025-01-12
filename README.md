@@ -74,7 +74,7 @@
         <div class="divider"></div>
         <div class="value">
             <span>$0.00</span>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Litecoin_Logo.png" alt="Litecoin">
+            <img src="[https://upload.wikimedia.org/wikipedia/commons/a/a2/Litecoin_Logo.png](https://cdn.freebiesupply.com/logos/large/2x/litecoin-logo-png-transparent.png)" alt="Litecoin">
         </div>
     </div>
 </body>
