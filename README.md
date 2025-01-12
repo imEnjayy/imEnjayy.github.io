@@ -12,7 +12,7 @@
             height: 100vh;
             margin: 0;
             background-color: #0F1E28; /* Page background */
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
         }
 
         .box {
@@ -34,15 +34,15 @@
         }
 
         .multiplier {
-            font-size: 28px; /* Adjusted to match reference */
-            font-weight: bold;
+            font-size: 24px; /* Updated for Helvetica consistency */
+            font-weight: 700;
             color: #00FF00; /* Green text */
             margin-bottom: 10px;
         }
 
         .divider {
-            width: 70%; /* Adjusted to fit the box */
-            height: 1px;
+            width: 60%; /* Updated to proper size */
+            height: 2px; /* Increased thickness */
             background-color: #2F4553; /* Dark gray-blue */
             margin: 10px 0;
         }
@@ -50,8 +50,8 @@
         .value {
             display: flex;
             align-items: center;
-            font-weight: normal; /* Balanced boldness */
-            font-size: 20px; /* Increased to align with multiplier */
+            font-size: 20px; /* Adjusted size */
+            font-weight: 700; /* Match Helvetica bold weight */
             line-height: 120%;
             color: #00FF00; /* Green text */
         }
@@ -74,7 +74,7 @@
         <div class="divider"></div>
         <div class="value">
             <span>$0.00</span>
-            <img src="[https://upload.wikimedia.org/wikipedia/commons/a/a2/Litecoin_Logo.png](https://cdn.freebiesupply.com/logos/large/2x/litecoin-logo-png-transparent.png)" alt="Litecoin">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Litecoin_Logo.png" alt="Litecoin">
         </div>
     </div>
 </body>
