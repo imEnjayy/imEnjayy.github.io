@@ -16,18 +16,17 @@
         }
 
         .box {
-            width: 180px; /* Fixed width for a balanced look */
-            height: 200px; /* Fixed height for spacing */
+            width: 160px; /* Square dimensions */
+            height: 160px; /* Square dimensions */
             background-color: #1A2C38; /* Inner box background color */
             border: 5px solid #00FF00; /* Green border */
             border-radius: 10px;
-            padding: 20px; /* Padding for inner spacing */
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center all items within */
+            justify-content: space-between; /* Distribute items evenly */
             align-items: center;
-            gap: 20px; /* Add space between the elements */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for effect */
+            padding: 15px; /* Inner spacing */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
             transition: transform 0.2s, width 0.2s, height 0.2s;
         }
 
@@ -43,8 +42,8 @@
         }
 
         .divider {
-            width: 70%; /* Divider width */
-            height: 3px; /* Divider thickness */
+            width: 60%; /* Adjusted divider width */
+            height: 2px; /* Adjusted divider thickness */
             background-color: #2F4553; /* Divider color */
             margin: 0; /* No extra margin */
         }
@@ -53,7 +52,7 @@
             display: flex;
             align-items: center;
             font-size: 16px; /* Font size for $0.00 */
-            font-weight: 700; /* Match bold Helvetica */
+            font-weight: 700; /* Bold style for dollar amount */
             font-variant-numeric: tabular-nums; /* Equal digit spacing */
             color: #00FF00; /* Green text */
             line-height: 120%; /* Proper line height */
