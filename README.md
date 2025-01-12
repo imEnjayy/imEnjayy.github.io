@@ -11,7 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #0F1E28; /* Page background */
+            background-color: #000000; /* Page background: black */
             font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
         }
 
