@@ -34,57 +34,47 @@
         }
 
         .multiplier {
-            font-size: 30px;
+            font-size: 28px; /* Adjusted to match reference */
             font-weight: bold;
             color: #00FF00; /* Green text */
+            margin-bottom: 10px;
         }
 
         .divider {
-            width: 60%; /* Shortened length */
+            width: 70%; /* Adjusted to fit the box */
             height: 1px;
-            background-color: #2F4553; /* Updated to dark gray-blue */
+            background-color: #2F4553; /* Dark gray-blue */
             margin: 10px 0;
         }
 
         .value {
             display: flex;
             align-items: center;
-            font-weight: normal; /* Reduced boldness */
-            font-size: 16px;
+            font-weight: normal; /* Balanced boldness */
+            font-size: 20px; /* Increased to align with multiplier */
             line-height: 120%;
             color: #00FF00; /* Green text */
         }
 
         .value span {
-            font-size: 16px;
+            font-size: 20px;
             line-height: 120%;
         }
 
         .value img {
-            width: 20px;
-            height: 20px;
-            margin-left: 5px;
-        }
-
-        /* Placeholder for the Litecoin icon */
-        .litecoin-icon {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            background-color: #00FF00; /* Placeholder green circle */
-            border-radius: 50%;
+            width: 18px; /* Scaled Litecoin logo */
+            height: 18px;
             margin-left: 5px;
         }
     </style>
 </head>
 <body>
     <div class="box">
-        <div class="multiplier">25500×</div>
+        <div class="multiplier">1.03×</div>
         <div class="divider"></div>
         <div class="value">
             <span>$0.00</span>
-            <!-- Replace with actual Litecoin icon -->
-            <div class="litecoin-icon"></div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Litecoin_Logo.png" alt="Litecoin">
         </div>
     </div>
 </body>
