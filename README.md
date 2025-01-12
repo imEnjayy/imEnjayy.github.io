@@ -24,7 +24,7 @@
             padding: 20px; /* Padding for content spacing */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly; /* Centers elements with equal spacing */
             align-items: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional for better look */
             transition: transform 0.2s, width 0.2s, height 0.2s;
@@ -38,14 +38,14 @@
             font-size: 24px; /* Adjusted font size for consistency */
             font-weight: 700;
             color: #00FF00; /* Green text */
-            margin-bottom: 10px;
+            margin: 0; /* Removed extra spacing */
         }
 
         .divider {
-            width: 60%; /* Proper size for divider */
-            height: 2px; /* Thickness adjustment */
+            width: 70%; /* Adjusted divider width */
+            height: 3px; /* Increased thickness */
             background-color: #2F4553; /* Dark gray-blue */
-            margin: 10px 0;
+            margin: 0; /* No extra margin for centering */
         }
 
         .value {
@@ -56,10 +56,7 @@
             font-variant-numeric: tabular-nums; /* For equal spacing between digits */
             color: #00FF00; /* Green text */
             line-height: 120%; /* Proper line height */
-        }
-
-        .value span {
-            font-size: 16px;
+            margin: 0; /* No extra spacing */
         }
 
         .value img {
