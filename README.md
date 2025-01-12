@@ -17,7 +17,7 @@
 
         .box {
             width: 200px;
-            height: 150px;
+            height: 180px;
             background-color: #1A2C38;
             border: 3px solid #00FF00; /* Green border always visible */
             border-radius: 10px;
@@ -39,12 +39,25 @@
             color: #00FF00; /* Green text */
         }
 
+        .divider {
+            width: 80%;
+            height: 1px;
+            background-color: #00FF00; /* Green line */
+            margin: 10px 0;
+        }
+
         .value {
-            font-size: 20px;
-            color: #00FF00; /* Green text */
             display: flex;
             align-items: center;
-            margin-top: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 120%;
+            color: #00FF00; /* Green text */
+        }
+
+        .value span {
+            font-size: 16px;
+            line-height: 120%;
         }
 
         .value img {
@@ -52,14 +65,26 @@
             height: 20px;
             margin-left: 5px;
         }
+
+        /* Placeholder for the Litecoin icon */
+        .litecoin-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: #00FF00; /* Placeholder green circle */
+            border-radius: 50%;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="box">
-        <div class="multiplier">25500x</div>
+        <div class="multiplier">25500×</div>
+        <div class="divider"></div>
         <div class="value">
-            $0.00
-            <img src="litecoin-icon.png" alt="Litecoin Icon">
+            <span>$0.00</span>
+            <!-- Replace with actual Litecoin icon -->
+            <div class="litecoin-icon"></div>
         </div>
     </div>
 </body>
