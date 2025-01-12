@@ -19,7 +19,7 @@
             min-width: 150px; /* Initial minimum width */
             min-height: 100px; /* Initial minimum height */
             background-color: #1A2C38;
-            border: 3px solid #00FF00; /* Green border always visible */
+            border: 5px solid #00FF00; /* Slightly larger green border */
             border-radius: 10px;
             padding: 20px; /* Padding for content spacing */
             display: flex;
@@ -51,15 +51,15 @@
         .value {
             display: flex;
             align-items: center;
-            font-size: 20px; /* Adjusted size */
+            font-size: 16px; /* Updated font size for $0.00 */
             font-weight: 700; /* Match Helvetica bold weight */
-            line-height: 120%;
+            font-variant-numeric: tabular-nums; /* For equal spacing between digits */
             color: #00FF00; /* Green text */
+            line-height: 120%; /* Proper line height */
         }
 
         .value span {
-            font-size: 20px;
-            line-height: 120%;
+            font-size: 16px;
         }
 
         .value img {
