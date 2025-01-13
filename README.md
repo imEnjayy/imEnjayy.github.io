@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Styled Box</title>
+    <title>Interactive Box</title>
     <style>
         body {
             display: flex;
@@ -16,12 +16,12 @@
         }
 
         .box {
-            min-width: 150px; /* Initial minimum width */
-            min-height: 100px; /* Initial minimum height */
+            min-width: 150px;
+            min-height: 100px;
             background-color: #1A2C38;
             border: 5px solid #00FF00; /* Slightly larger green border */
             border-radius: 10px;
-            padding: 20px; /* Padding for content spacing */
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -44,7 +44,7 @@
             width: 60%; /* Divider width */
             height: 3.5px; /* Divider thickness */
             background-color: #2F4553; /* Dark gray-blue */
-            margin: 7px 0; /* Adjusted margin to center divider */
+            margin: 15px 0; /* Adjusted margin to center divider */
         }
 
         .value {
@@ -66,20 +66,52 @@
             height: 18px;
             margin-left: 5px;
         }
+
+        .inputs {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .inputs label {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .inputs input {
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #00FF00;
+            border-radius: 5px;
+            background-color: #1A2C38;
+            color: #FFFFFF;
+        }
+
+        .inputs button {
+            padding: 5px 10px;
+            font-size: 14px;
+            color: #FFFFFF;
+            background-color: #00FF00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .inputs button:hover {
+            background-color: #00CC00;
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="multiplier">1.03×</div>
-        <div class="divider"></div>
-        <div class="value">
-            <span>$0.00</span>
-            <svg fill="none" viewBox="0 0 96 96" class="svg-icon" style="">
-                <title>Litecoin</title>
-                <path d="M96 48c0 26.51-21.49 48-48 48S0 74.51 0 48 21.49 0 48 0s48 21.49 48 48Z" fill="#BFBBBB"></path>
-                <path d="M31.275 57.645 27 59.31 29.07 51l4.32-1.74L39.645 24H55.02l-4.5 18.585 4.23-1.71-2.04 8.25-4.29 1.71-2.535 10.5H69L66.375 72H27.75l3.525-14.355Z" fill="#fff"></path>
-            </svg>
-        </div>
-    </div>
-</body>
-</html>
+    <div>
+        <div class="box">
+            <div class="multiplier" id="multiplier">1.03×</div>
+            <div class="divider"></div>
+            <div class="value">
+                <span id="dollar-amount">$0.00</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#FFFFFF">
+                    <path d="M64 8C33.43 8 8 33.43 8 64s25.43 56 56 56 56-25.43 56-56S94.57 8 64 8zm0 104c-
