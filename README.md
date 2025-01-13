@@ -16,18 +16,18 @@
         }
 
         .box {
-            width: 150px; /* Fixed width */
-            height: 150px; /* Fixed height */
+            min-width: 150px; /* Initial minimum width */
+            min-height: 100px; /* Initial minimum height */
             background-color: #1A2C38;
-            border: 5px solid #00FF00; /* Green border */
+            border: 5px solid #00FF00; /* Slightly larger green border */
             border-radius: 10px;
             padding: 20px; /* Padding for content spacing */
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
+            justify-content: center;
             align-items: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional for better look */
-            transition: transform 0.2s;
+            transition: transform 0.2s, width 0.2s, height 0.2s;
         }
 
         .box:hover {
