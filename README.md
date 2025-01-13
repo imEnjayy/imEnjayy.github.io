@@ -16,18 +16,18 @@
         }
 
         .box {
-            min-width: 150px; /* Initial minimum width */
-            min-height: 150px; /* Adjusted minimum height for balance */
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
             background-color: #1A2C38;
-            border: 5px solid #00FF00; /* Slightly larger green border */
+            border: 5px solid #00FF00; /* Green border */
             border-radius: 10px;
             padding: 20px; /* Padding for content spacing */
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Balanced spacing */
+            justify-content: center; /* Center content vertically */
             align-items: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional for better look */
-            transition: transform 0.2s, width 0.2s, height 0.2s;
+            transition: transform 0.2s;
         }
 
         .box:hover {
@@ -35,23 +35,22 @@
         }
 
         .multiplier {
-            font-size: 24px; /* Adjusted font size for consistency */
+            font-size: 24px; /* Font size for the multiplier */
             font-weight: 700;
             color: #00FF00; /* Green text */
-            margin-bottom: 10px;
         }
 
         .divider {
-            width: 60%; /* Proper size for divider */
-            height: 3.5px; /* Thickness adjustment */
+            width: 60%; /* Divider width */
+            height: 3.5px; /* Divider thickness */
             background-color: #2F4553; /* Dark gray-blue */
-            margin: 10px 0;
+            margin: 15px 0; /* Adjusted margin to center divider */
         }
 
         .value {
             display: flex;
             align-items: center;
-            font-size: 16px; /* Updated font size for $0.00 */
+            font-size: 16px; /* Font size for $0.00 */
             font-weight: 700; /* Match Helvetica bold weight */
             font-variant-numeric: tabular-nums; /* For equal spacing between digits */
             color: #00FF00; /* Green text */
