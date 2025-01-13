@@ -44,7 +44,7 @@
             width: 60%; /* Divider width */
             height: 3.5px; /* Divider thickness */
             background-color: #2F4553; /* Dark gray-blue */
-            margin: 15px 0; /* Adjusted margin to center divider */
+            margin: 7px 0; /* Adjusted margin to center divider */
         }
 
         .value {
