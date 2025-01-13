@@ -7,9 +7,8 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #000000; /* Page background: black */
@@ -29,7 +28,6 @@
             align-items: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional for better look */
             transition: transform 0.2s, width 0.2s, height 0.2s;
-            margin-bottom: 20px;
         }
 
         .box:hover {
@@ -68,43 +66,14 @@
             height: 18px;
             margin-left: 5px;
         }
-
-        .input-container {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        input {
-            padding: 10px;
-            border: 2px solid #00FF00;
-            border-radius: 5px;
-            background-color: #1A2C38;
-            color: #00FF00;
-            font-size: 16px;
-            outline: none;
-            font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        input:focus {
-            border-color: #2F4553;
-        }
-
-        input::placeholder {
-            color: #2F4553;
-        }
     </style>
 </head>
 <body>
-    <div class="input-container">
-        <input id="multiplierInput" type="text" placeholder="Enter Multiplier (e.g., 1010)" />
-        <input id="betAmountInput" type="number" placeholder="Enter Bet Amount (e.g., 50)" />
-    </div>
     <div class="box">
-        <div class="multiplier" id="displayMultiplier">1.00×</div>
+        <div class="multiplier">1.03×</div>
         <div class="divider"></div>
         <div class="value">
-            <span id="winAmount">$0.00</span>
+            <span>$0.00</span>
             <svg fill="none" viewBox="0 0 96 96" class="svg-icon" style="">
                 <title>Litecoin</title>
                 <path d="M96 48c0 26.51-21.49 48-48 48S0 74.51 0 48 21.49 0 48 0s48 21.49 48 48Z" fill="#BFBBBB"></path>
@@ -112,22 +81,5 @@
             </svg>
         </div>
     </div>
-    <script>
-        const multiplierInput = document.getElementById('multiplierInput');
-        const betAmountInput = document.getElementById('betAmountInput');
-        const winAmountDisplay = document.getElementById('winAmount');
-        const displayMultiplier = document.getElementById('displayMultiplier');
-
-        function calculateWinAmount() {
-            const multiplier = parseFloat(multiplierInput.value.replace(/[^0-9.]/g, '')) || 1.00;
-            const betAmount = parseFloat(betAmountInput.value) || 0;
-            const winAmount = multiplier * betAmount;
-            displayMultiplier.textContent = `${multiplier.toFixed(2)}×`;
-            winAmountDisplay.textContent = `$${winAmount.toFixed(2)}`;
-        }
-
-        multiplierInput.addEventListener('input', calculateWinAmount);
-        betAmountInput.addEventListener('input', calculateWinAmount);
-    </script>
 </body>
 </html>
